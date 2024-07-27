@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment method</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+    
+    <!-------------- form project ------------>
+    <div class="container">
+        
+        <form action="" class="payment-form">
+            
+    <!-----------left container --------->
+    
+            <div class="left">
+                <label for=""><h1 class="form-head">BILLING ADDRESS</h1></label>
+                <label for="fullname"><span class="input-name">Full Name</span><input class="fullname" type="text" name="fullname" id="fullname" required placeholder="Rakesh"></label>
+                <label for="email"><span class="input-name">Email</span><input type="email" name="email" id="email" required placeholder="youremail@gmail.com"></label>
+                <label for="address"><span class="input-name">Address</span><input type="text" name="address" id="address" required placeholder="Enter Address"></label>
+                <label for="city"><span class="input-name">City</span><input type="text" name="city" id="city" required placeholder="Enter City"></label>
+            
+                <label for="state" class="st-zip">
+                    <div class="state">
+                    <span class="input-name st-name">State</span> <select name="state" id="state" class="selact-input">
+                                                              
+                                                                <option value="Choose state">Choose State</option>
+                                                                <option value="Lower Class">Lower Class</option>
+                                                                <option value="Middle Class">Middle Class</option>
+                                                                <option value="Upper Class">Upper Class</option>
+                                                                <option value="High Class">High Class</option>
+                                                                                     </select>
+                                                                                     </div>
+                <div class="zip">
+                 <span class="input-name zip-name">Zip code</span><input class="zip-input" type="number" name="zipcode" id="zipcode" required placeholder="Zip Code"></label>
+               </div>
+            </div>
+      
+      <!-----right container ------>
+      
+            
+            <div class="right">
+                <label for=""><h1 class="form-head right-head">Payment</h1></label>
+               <label for="" class="ac-c">  <p class="ac">Accepted card</p></label>
+               <label>  <div class="card-img">
+                     <img src="/image/visa.png" alt="visa">
+                     <img src="/image/master.png" alt="Master Card">
+                     <img src="/image/paypal.png" alt="paypal">
+                     <img src="/image/card.png" alt="Bank Card">
+                 </div>
+                 </label>
+                 <label for="credit-num">
+                     <span class="input-name">Credit Card Number</span><input type="number" name="credit-num" id="credit-num" required placeholder="Enter card number">
+                 </label>
+                 <label for="exp-month"><span class="input-name">Exp Month</span><input type="number" name="exp-month"  maxlength="5" id="exp-month" required placeholder="Enter Month"></label>
+                 
+                 
+                 <label for="exp-year" class="st-zip">
+                     <div class="year-cvv state">
+                       <span class="input-name st-name">Exp Year</span><select name="exp-year" id="exp-year" required class="selact-input">
+                                                                 <option value="Choose year">Choose Year</option>
+                                                                 <option value="2024">2024</option>
+                                                                 <option value="2023">2023</option>
+                                                                 <option value="2022">2022</optioh>
+                                                                 <option value="2021">2021</option>
+                                                                 <option value="2020">2020</option>
+                                                                 <option value="2019">2019</option>
+                                                                 <option value="2018">2018</option>
+                                                                 <option value="2017">2017</option>
+                                                                 <option value="2016">2016</option>
+                                                                 <option value="2015">2015</option>
+                                                                 <option value="2014">2014</option>
+                                                                 <option value="2013">2013</option>
+                                                                 <option value="2012">2012</option>
+                                                                 <option value="2011">2011</option>
+                                                                 <option value="2010">2010</option>
+                                                                 <option value="2009">2009</option>
+                                                                 <option value="2008">2008</option>
+                                                                 <option value="2007">2007</option>
+                                                                 <option value="2006">2006</option>
+                                                                 
+                                                                            </select>
+                    </div>
+                 <div class="cvv zip">
+                     <span class="input-name zip-name">CVV</span> <input class="cvv-input zip-input" type="number" name="cvv" id="cvv" maxlength="5" placeholder="Enter CVV">
+                </div>
+              </label>
+              <label for="" class="btn-box"><button type="submit" class="btn"><img class="btn-img pp" src="/image/done.png" alt="Done"></button></label>
+              
+              
+              
+           </div>
+        </form>
+    </div>
+    
+    
+    
+    <script src="form_main.js"></script>
+</body>
+</html>
